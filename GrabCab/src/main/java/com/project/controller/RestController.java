@@ -21,7 +21,7 @@ public class RestController {
 		return "home";
 	}
 	
-	@GetMapping("save-user")
+	@GetMapping("saveuser")
 	public String saveUser(@RequestParam String username,@RequestParam String firstname,@RequestParam String lastname,@RequestParam int age,@RequestParam String password)
 	{
 		User user=new User(username,firstname,lastname,age,password);
